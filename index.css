@@ -29,6 +29,10 @@ iframe { width: 100%; }
           box-shadow: 0 0 10px #dddddd;
           background-color: #f2ae72; }
 .header-left { float: left; }
+.header-left a { line-height: 75px;
+                 color: #f2e394;
+                 text-decoration: none;
+                 font-size: 50px; }
 .header-right { float: right; }
 .header-right a { line-height: 75px;
                   color: white;
@@ -41,7 +45,7 @@ iframe { width: 100%; }
 .clear { clear: both; }
 .footer { height: 100px;
           width: 100%;
-          background-color: #d96459;
+          background-color: #f2ae72;
           color: white;
           font-size: 20px;
           padding-top: 30px;
