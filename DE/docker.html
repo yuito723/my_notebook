@@ -19,7 +19,10 @@
       </p>
     <hr>
     <h3>使い方</h3>
-      <h4>コンテナの起動</h4>
+      <h4>イメージのダウンロード<h4>
+      <p><li>docker pull {imagename}{:tag}</li>
+      </p>
+      <h4>コンテナの作成と起動</h4>
       <p><li>docker run --rm -it --name {containerID} -h {hostname} -p {sshIP}:22 {imagename}{:tag} {command(/bin/bash)}</li>
       </p>
       <h4>動作中のコンテナを表示</h4>
@@ -29,8 +32,23 @@
       <h4>コンテナを削除</h4>
       <p><li>docker rm {containerID}</li>
       </p>
+      <h4>イメージを削除</h4>
+      <p><li>docker rmi {imagename}</li>
+      </p>
       <h4>コンテナから抜ける</h4>
-      <p><li>ctrl+p or ctrl+q</li>
+      <p><li>ctrl+P or ctrl+Q</li>
+      </p>
+      <h4>コンテナに再接続する</h4>
+      <p><li>docker attach {containerID or containername}</li>
+      </p>
+      <h4>コンテナから抜けて終了する</h4>
+      <p><li>exit</li>
+      </p>
+      <h4>コンテナを再開</h4>
+      <p><li>docker start {containerID or containername}</li>
+      </p>
+      <h4>コンテナを終了する</h4>
+      <p><li>docker stop {containerID or containername}</li>
       </p>
     <hr>
     <h3>rosyuku/ubuntu-rdpコンテナを使用する場合</h3>
