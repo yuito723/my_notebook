@@ -15,9 +15,11 @@
     <li><a href="./">ホーム</a></li>
     <p>※こちらはサイト開発版です。通常版は<a href="../">こちら</a>。</p>
     <h2>Docker</h2>
-    <p><li>詳しくは<a href="https://matsuand.github.io/docs.docker.jp.onthefly/engine/">こちら</a></li>
-       
-    </p>
+      <p><li>詳しくは<a href="https://matsuand.github.io/docs.docker.jp.onthefly/engine/">こちら</a></li>   
+      </p>
+    <h3>rosyuku/ubuntu-rdpコンテナを使用する場合</h3>
+      <p><li>docker run --rm -it --name <containerID> -h <hostname> -p <remotedesktopIP>:3389 -p <sshIP>:22 --shm-size=256m rosyuku/ubuntu-rdp<:tag></li>
+      </p>
     <p>© 2022 MY NOTEBOOK</p>
   </body>
 </html>
