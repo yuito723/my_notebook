@@ -24,6 +24,7 @@
       </p>
       <h4>コンテナの作成と起動</h4>
       <p><li>docker run --rm -it --name {containerID} -h {hostname} -p {sshIP}:22 {imagename}{:tag} {command(/bin/bash)}</li>
+         <li>docker run --rm -it --name ubuntu-rdp -h ubuntu-rdp -p 13389:3389 -p 10022:22 --shm-size=256m rosyuku/ubuntu-rdp</li>
       </p>
       <h4>動作中のコンテナを表示</h4>
       <p><li>docker ps</li>
