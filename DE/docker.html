@@ -17,10 +17,18 @@
     <h2>Docker</h2>
       <p><li>詳しくは<a href="https://matsuand.github.io/docs.docker.jp.onthefly/engine/">こちら</a></li>   
       </p>
+    <h3>使い方</h3>
+      <h4>コンテナの起動</h4>
+      <p><li>docker run --rm -it --name <containerID> -h <hostname> -p <sshIP>:22 <imagename><:tag> <command(/bin/bash)></li>
+      </p>
+      <h4>動作中のコンテナを表示</h4>
+      <p><li>docker ps</li>
+         <li>docker ps -a(動作終了も含めて表示)</li>
+      </p>
     <h3>rosyuku/ubuntu-rdpコンテナを使用する場合</h3>
       <p><li>docker run --rm -it --name <containerID> -h <hostname> -p <remotedesktopIP>:3389 -p <sshIP>:22 --shm-size=256m rosyuku/ubuntu-rdp<:tag></li>
          <li>ID：my-ubuntu、PASS：my-Password</li>
-         <li>詳しくは<a href="https://matsuand.github.io/docs.docker.jp.onthefly/engine/">こちら</a></li>
+         <li>詳しくは<a href="https://own-search-and-study.xyz/2020/05/02/docker-container-ubuntu-desktop-rdp/">こちら</a></li>
       </p>
     <p>© 2022 MY NOTEBOOK</p>
   </body>
